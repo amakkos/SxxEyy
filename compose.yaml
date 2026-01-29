@@ -1,0 +1,8 @@
+services:
+  selenium-app:
+    build: .
+    network_mode: "host"          # use same network as host
+    extra_hosts:
+      - "host.docker.internal:host-gateway"  # add host computer
+    stdin_open: true
+    tty: true
