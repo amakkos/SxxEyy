@@ -20,10 +20,10 @@ This is a python+selenium tool to automate getting new episodes
 
 
 ## How to configure
-When using docker, just update URL, user and password in docker compose yaml file. I think you can copy those from your browser.  
+When using docker, just update URL, user and password in config.py. I think you can copy those from your browser.  
 Note: uTorrent still uses old basic http auth, so use `http://{USER}:{PASSWD}@{IP}:{PORT}/gui/` as URL.   
 Note: If you use utorrent/qBittorent on your machine and want to run that in container, `127.0.0.1` will not work. Use host.docker.internal to access your docker host.   
-When running python instead, just set those variables in environment. In this case you can use `127.0.0.1` in URL. 
+When running pure python instead, install chrome and get chromedriver from `https://googlechromelabs.github.io/chrome-for-testing/`. In this case you can use `127.0.0.1` in URL. 
 
 ## Setup and run docker
 ```
